@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Thushara</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+        <span>Thushara R</span><br>
+        <span>📧 thushara@gmail.com</span><br>
+        <span>📞 +918867654555</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+        <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#recommendations" onclick="showSection('recommendations')">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me Section (Default) -->
+    <section class="content-section" id="about">
+      <div class="avatar"></div>
+      <div class="intro-text">
+        <h2>Hi, I'm Thushara! 👋</h2>
+        <p>
+          I am a full stack developer with 3 years of experience in both application and presentation layers.<br>
+          I have worked on ASP.Net Core Web API , Angular and JavaScript
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="content-section" id="skills" style="display: none;">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="images/html.jpg" alt="HTML">
+            <h3>HTML</h3>
+            <p>2 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/javascript.jpg" alt="JavaScript">
+            <h3>JavaScript</h3>
+            <p>1.5 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/java.jpg" alt="Java">
+            <h3>Java</h3>
+            <p>0.5 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/react.jpg" alt="React">
+            <h3>React</h3>
+            <p>1 year experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/nodejs.jpg" alt="Node.js">
+            <h3>Node.js</h3>
+            <p>1 year experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/css.jpg" alt="CSS">
+            <h3>CSS</h3>
+            <p>2 years experience</p>
+          </div>
+      
+          <!-- New skills added below -->
+          <div class="skill">
+            <img src="images/dotnet.jpg" alt=".NET">
+            <h3>.NET</h3>
+            <p>1.5 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/angular.jpg" alt="Angular">
+            <h3>Angular</h3>
+            <p>1 year experience</p>
+          </div>
+          <div class="skill">
+            <img src="images/python.jpg" alt="Python">
+            <h3>Python</h3>
+            <p>2 years experience</p>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Projects Section -->
+    <section class="content-section" id="projects" style="display: none;">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+            <h3>Interactive Recipe Finder Web App</h3>
+            <p>• This web app allows users to search for recipes based on ingredients they have at home. The app features a dynamic search bar, filter options (like cuisine type, dietary restrictions, and prep time), and displays recipes with detailed instructions and nutritional information. It can also recommend recipes based on user preferences and past searches.</p>
+            </div>
+            <div class="project">
+            <h3>AI-Powered Personal Finance Tracker</h3>
+            <p>• A mobile app designed to help users manage their personal finances by tracking income, expenses, and investments. Using machine learning, the app can analyze spending patterns, provide insights into saving opportunities, and give monthly budgeting recommendations. The app also offers visualizations such as pie charts for expenses, trend lines for spending over time, and projections based on spending habits.</p>
+            </div>
+            <div class="project">
+            <h3>Remote Team Collaboration Dashboard</h3>
+            <p>• A web-based collaboration tool designed to enhance productivity for remote teams. It integrates task management, video conferencing, file sharing, and a messaging platform in one place. The app supports user authentication, project-based organization, and a calendar view for scheduling meetings and deadlines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="content-section" id="recommendations" style="display: none;">
+        <h2>Recommendations</h2>
+        <div class="recommendations-container">
+            <div class="recommendation">
+              <p>“Alex consistently delivers high-quality work with impressive attention to detail. Their ability to solve complex problems and communicate effectively makes them a valuable asset to any team.”</p>
+            </div>
+            <div class="recommendation">
+              <p>“Jamie’s dedication and creativity shine through in every project. They approach challenges with positivity and insight, making collaboration seamless and productive. Truly a pleasure to work with!”</p>
+            </div>
+            <div class="recommendation">
+              <p>“Taylor’s technical skills are exceptional, and they always go above and beyond. Their initiative and reliability make them someone I’d happily work with again on any project.”</p>
+            </div>  
+        </div>
+
+        <div id="leave-recommendation">
+            <h3>Leave a Recommendation</h3>
+            <div class="recommendation-form">
+            <input type="text" id="name" placeholder="Name (Optional)">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button id="submit-btn">Submit</button>
+            </div>
+        </div>
+                  
+        <!-- Popup Message -->
+        <div id="popup" class="popup-hidden">
+            <p>Thanks for leaving a recommendation!</p>
+            <button id="popup-ok-btn">Ok</button>
+        </div>
+        
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="white">
+                <path d="M12 2l6 6h-5v10H11V8H6z"/>
+            </svg>
+        </button>
+            
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+/* Reset some basic styling */
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #5a0cad;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-content h1 {
+    font-size: 24px;
+  }
+  
+  .header-content p {
+    font-size: 16px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content Section */
+  main {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .content-section {
+    display: none; /* Hide sections by default */
+  }
+  
+  .content-section h2 {
+    color: #5a0cad;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .content-section p, .content-section ul {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .content-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Show the default section */
+  #about {
+    display: block;
+  }
+  
+  /* Avatar */
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-image: url('images/avatar.png');
+    background-size: cover;
+    margin-left: 590px;
+  }
+
+  /* Style for the skills section */
+.content-section {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    display: block; /* Ensure it displays properly when not hidden */
+  }
+  
+  .content-section h2 {
+    color: #6a0dad;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Skills container styling */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual skill box styling */
+  .skill {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .skill h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .skill p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  /* Style for the projects section */
+#projects {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    display: none; /* Initially hidden as per your HTML */
+    text-align: left;
+  }
+  
+  #projects h2 {
+    color: #6a0dad;
+    font-size: 2em;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  /* Container for project entries */
+  .projects-container {
+    padding: 0 20px;
+  }
+  
+  /* Individual project styling */
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .project p {
+    font-size: 1em;
+    color: #555;
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Add border bottom except for the last project */
+  .project:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+/* Styling for the recommendations section */
+#recommendations {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    display: none; /* Initially hidden as per your HTML */
+  }
+  
+  #recommendations h2 {
+    color: #6a0dad;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Container for recommendation cards */
+  .recommendations-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling individual recommendation */
+  .recommendation {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    font-style: italic;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .recommendation p {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Styling for the leave recommendation form */
+  #leave-recommendation {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #leave-recommendation h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .recommendation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #name, #message {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  #name {
+    height: 40px;
+  }
+  
+  #message {
+    height: 120px;
+    resize: none;
+  }
+  
+  #submit-btn {
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #6a0dad;
+    background-color: #fff;
+    border: 2px solid #6a0dad;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  #submit-btn:hover {
+    background-color: #6a0dad;
+    color: #fff;
+  }
+  
+  /* Popup Message Styling */
+  #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 400px;
+    background-color: #eac5f5; /* Soft lavender background */
+    color: #333;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Checkmark icon styling */
+  #popup::before {
+    content: "✔️";
+    display: block;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #popup p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* OK button styling */
+  #popup-ok-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #6a0dad;
+    background-color: #fff;
+    border: 2px solid #6a0dad;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #popup-ok-btn:hover {
+    background-color: #6a0dad;
+    color: #fff;
+  }
+    
+  /* Scroll to Top Button */
+  #scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6a0dad; /* Customize color */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    opacity: 1 !important; /* Forcefully show button */
+    visibility: visible !important; /* Forcefully show button */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  #scroll-to-top:hover {
+    background-color: #8a2be2; /* Optional hover effect */
+  }
+  
+  #scroll-to-top svg {
+    width: 45px;
+    height: 50px;
+}
+    
